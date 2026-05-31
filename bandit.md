@@ -131,15 +131,13 @@ pass: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
 no pass just get private key and use it for 14
 
-## bandit 14
-
 ```shell
 cat /etc/bandit_pass/bandit14
 ```
 
 pass: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 
-## bandit 15
+## bandit 14
 
 ```shell
 echo "MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS" | nc localhost 30000 -t
@@ -147,7 +145,7 @@ echo "MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS" | nc localhost 30000 -t
 
 pass: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 
-## bandit 16
+## bandit 15
 
 ```shell
 
