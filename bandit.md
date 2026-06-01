@@ -148,7 +148,29 @@ pass: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 ## bandit 15
 
 ```shell
-
+openssl s_client localhost:30001
 ```
 
-pass: 
+to initialize the connection
+then paste the previous pass and hit enter.
+
+pass: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+## bandit 16
+
+```shell
+nmap -sC -p 31000-32000 localhost
+```
+
+Scan for open ports. Two of them have ssl/tls connections for connecting
+
+```shell
+echo "kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx" | openssl s_client -connect localhost:31790 -quiet
+```
+
+Initially tried the solution to bandit 15. connect to the server, paste the pass, hit enter. This would only result in a "keyupdate" message showing up in the output instead of the puzzle solution.
+
+This happens due to openssl s_client's command interface. if you type "k" while connected to the server it initializes a key refresh, hence the "keyupdate" message.
+the server still sent a response it is just covered up by the keyupdate. solution: pass the input through stdin to disable keyboard input. also add `-quiet` to disable the "keyupdate" message.
+
+no pass private key used
