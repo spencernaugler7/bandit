@@ -1,6 +1,6 @@
 # Bandit Notes
 
-[bandit link](https://overthewire.org/wargames/bandit/bandit5.html)
+[bandit link](https://overthewire.org/wargames/bandit)
 
 ## Bandit 0
 
