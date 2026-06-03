@@ -174,3 +174,26 @@ This happens due to openssl s_client's command interface. if you type "k" while 
 the server still sent a response it is just covered up by the keyupdate. solution: pass the input through stdin to disable keyboard input. also add `-quiet` to disable the "keyupdate" message.
 
 no pass private key used
+
+## bandit 17
+
+```shell
+diff passwords.old passwords.new
+```
+
+pass: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+
+## bandit 18
+
+```shell
+ssh -p 2220 bandit18@bandit.labs.overthewire.org /bin/bash --norc
+cat readme
+```
+
+pass: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+
+## bandit 19
+
+```shell
+
+```
