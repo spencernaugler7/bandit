@@ -195,5 +195,15 @@ pass: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
 ## bandit 19
 
 ```shell
+./bandit20-do cat /etc/bandit_pass/bandit20
+```
+
+pass: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+## bandit 20
+
+```shell
 
 ```
+
+pass: 
